@@ -6,23 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mac-book-pro-assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <main>
-        <div class="container custom-margin">
+        <div class="container pt-4">
             <!-- write content with bootstrapp 12 column system -->
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-6"><img class="img-fluid" src="./images/mac.png" alt=""></div>
                 <div class="col-md-6">
+                    <!-- heading of the pc -->
                     <h2 class="fw-bold mb-4">Buy the M1 mac-book and customize your iMack</h2>
-                    <p>Buy Apple M1 chip with 8core CPU . 
+                    <p class="my-4">Buy Apple M1 chip with 8core CPU . 
                         Customize your Blue 24-inch iMac with Apple M1 chip. 
                         Apple M1 chip with 8-core CPU with 4 performance cores 
                         and 4 efficiency cores, 7-core GPU, and 16-core Neural 
                         Engine 8GB unified memory 256GB SSD storage Two Thunderbolt
                          / USB 4 ports Magic Mouse Magic Keyboard -US English    
                     </p>
+                    <!-- all configaration button -->
+                    <!-- btn for ram -->
+                    <div class="my-4">
+                        <h3>Memory </h3>
+                        <button id="ram-memory-default" class="btn btn-primary my-2 me-2">8GB unified RAM memory</button>
+                        <button id="ram-memory-price" class="btn btn-primary my-2">16GB unified RAM memory</button>
+                    </div>
+                    <!-- btn for storage -->
+                    <div class="my-4">
+                    <h3>Storage</h3>
+                    <button id="ssd-storage-default" class="btn btn-success my-2">256GB SSD storage </button>
+                    <button id="ssd-storage-price1" class="btn btn-success my-2 mx-2">512GB SSD storage </button>
+                    <button id="ssd-storage-price2" class="btn btn-success my-2">1TB SSD storage </button>
+                    </div>
+                    <!-- btn for delivery -->
+                    <div class="my-4">
+                    <h3>Choose your delivery option </h3>
+                    <button id="delivery-cost-default" class="btn btn-info my-2 me-2"> Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-cost-needed" class="btn btn-info my-2">Aug 21 Delivery charge $20</button>
+                
+                    <!-- tabil for all price -->
+                    <div class="pt-4">
+                        <table class="table table-striped table-hover">
+                            <tbody>
+                              <tr>
+                                <th scope="row" colspan="2">Best price</th>
+                                <td>$<span id="best-price-cost">1299</span></td>
+                              </tr>
+    
+                              <tr>
+                                <th scope="row" colspan="2">Extra RAM Memory Cost</th>
+                                <td><span id="ram-memory-cost">0</span></td>
+                              </tr>
+    
+                              <tr>                              
+                                <th scope="row" colspan="2">Extra Storage Cost</th>
+                                <td>$<span id="storage-memory-cost">0</span></td>
+                              </tr>
+    
+                              <tr>
+                                <th scope="row" colspan="2">Delivery charge</th>
+                                <td>$<span id="delivery-cost">0</span></td>
+                              </tr>
+                              <tr>
+                                <th scope="row" colspan="2">Total Price</th>
+                                <td>$<span id="total-cost">1299</span></td>
+                              </tr>
+                              <hr/>
+                            </tbody>
+                          </table>
+                    </div>
+                    <!-- for promo code -->
+                    <div class="pt-2">
+                        <div class="input-group mb-3">
+                            <input type="text" id="promo-input" class="form-control" placeholder="add promo code ' stevekaku ' for 20% off" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button id="promo-btn" class="btn btn-danger text-white fw-bold btn-outline-secondary" type="button">Apply</button>
+                          </div>
+                    </div>
+                    <!-- discount total for promo code -->
+                    <h1>Discount Total : $<span id="promo-discount">1299</span></h1>
                 </div>
             </div>
         </div>
